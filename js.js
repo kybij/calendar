@@ -27,27 +27,19 @@ for (let index = 0; index <9; index++) {
         <textarea name="" class="form-control w-100 ${status}" id="input"   rows="3"></textarea>
     </div>
     <div class="col-sm-1">
-        <button class="saveBtn" >Save</button>
+        <button id=${timeblock[index]} class="saveBtn" >Save</button>
     </div>
     `)
 }
  
-// function mySave () {
-//    var myContent = document.getElementById("input").value;
-//     localStorage.setItem("myContent", myContent);
-//     myLoad ()
-// }
 
-// function myLoad (){
-//     var myContent = localStorage.getItem("myContent");
-//     document.getElementById("input").value = myContent
-// }
-var btns = document.querySelectorAll(".saveBtn")
+let btns = document.querySelectorAll(".saveBtn")
 
 for (i of btns) {
-    i.addEventListener("click", function(){
-        console.log(this)
-    }) }
+    i.addEventListener("click", function(e){
+        console.log(e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.value)
+        
+    })
+ }
 
-
- // $("#input.text").val(localStorage.getItem("input")) 
+ 
