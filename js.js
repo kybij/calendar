@@ -24,7 +24,7 @@ for (let index = 0; index <9; index++) {
     row.append(`
     <div class="col-sm-1 mt-4 hour " >${timeblock[index]}</div>
     <div class="col-sm-10">
-        <textarea name="" class="form-control w-100 ${status}" id="input"   rows="3"></textarea>
+        <textarea name="textarea" class="form-control w-100 ${status}" id="input"   rows="3"></textarea>
     </div>
     <div class="col-sm-1">
         <button id=${timeblock[index]} class="saveBtn" >Save</button>
@@ -32,13 +32,14 @@ for (let index = 0; index <9; index++) {
     `)
 }
  
+
 let btns = document.querySelectorAll(".saveBtn")
 
 for (i of btns) {
     i.addEventListener("click", function(e){
         var userText = e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.value
         localStorage.setItem(timeblock, userText)
-        localStorage.getItem("userText",JSON.stringify(userText))
+        
     })
  }
 
