@@ -37,8 +37,9 @@ let btns = document.querySelectorAll(".saveBtn")
 
 for (i of btns) {
     i.addEventListener("click", function(e){
-        console.log(e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.value)
-        
+        var userText = e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.value
+        localStorage.setItem(timeblock, userText)
+        localStorage.getItem("userText",JSON.stringify(userText))
     })
  }
 
