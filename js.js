@@ -32,7 +32,6 @@ for (let index = 0; index <9; index++) {
     `)
 }
  
-
 let btns = document.querySelectorAll(".saveBtn")
 
 for (i of btns) {
