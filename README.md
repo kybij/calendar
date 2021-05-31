@@ -13,7 +13,7 @@ For eachday each timeblock is color coded for the past, present, and future.
 https://kybij.github.io/calendar/
 
 ### Screenshot
-![](screenshot(10).png)
+![](Screenshot(10).png)
 
 ### Contribution
 Kylee Bijerring 👻
